@@ -81,7 +81,7 @@ a:hover {
 }
 
 .tm-brand-container-inner {
-  max-width: 580px;
+  max-width: 680px;
   width: 100%;
 }
 
@@ -90,7 +90,7 @@ a:hover {
 }
 
 .tm-brand-name {
-  font-size: 3.8rem;
+  font-size: 3.0rem;
 }
 
 .tm-brand-description {
@@ -194,11 +194,20 @@ a:hover {
 }
 
 .tm-title-small {
-  font-size: 1.3rem;
+  font-size: 1.0rem;
 }
 
 p {
   line-height: 1.8;
+}
+
+/*
+  Certificate section
+*/
+.tm-section-title {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 60px; /* Increase the font size */
 }
 
 /*
@@ -209,15 +218,55 @@ p {
   padding-top: 95px;
 }
 
+.tm-my-contact-item {
+  width: 100%;
+  /*max-width: 345px;*/
+  height: auto;
+  /*min-height: 420px;*/
+  margin-right: 35px;
+  /*background-color: white;*/
+  /*padding: 54px 34px 44px;*/
+  align-items: center;
+}
+
+.my-contact-text {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+.my-contact-space {
+        margin-right: 20px; /* Add space after the word "LinkedIn" */
+    }
+
+.my-contact-image {
+        width: 30px; /* Set the width of the image */
+        height: auto;
+    }
+
+.cert-image {
+        width: 50%; /* Set the width of the image */
+        max-width: 50%;
+		height: auto;
+    }
+	
+
 .tm-contact-item {
   width: 33.3334%;
-  max-width: 345px;
+  max-width: 550px;
   height: auto;
   min-height: 420px;
   margin-right: 35px;
   background-color: white;
   padding: 54px 34px 44px;
 }
+
+.tm-contact-item img {
+		border-radius: 10px; /* Adjust the value to control the roundness */
+		max-height: 100%;
+		width: auto;
+		margin:center;
+
+	}
 
 .tm-contact-item:last-child {
   margin-right: 0;
@@ -272,6 +321,10 @@ p {
   margin-bottom: 30px;
 }
 
+.tm-my_contact-text {
+  align: center;
+}
+
 .tm-link {
   color: #676767;
 }
@@ -305,6 +358,8 @@ p {
     margin-left: auto;
     margin-right: auto;
   }
+  
+
 }
 
 @media (max-width: 730px) {
@@ -315,6 +370,18 @@ p {
   .tm-portfolio-name {
     justify-content: center;
   }
+  
+  .tm-portfolio-image {
+    justify-content: center;
+	height: 10px; /* Set the desired height for the div */
+    overflow: hidden; /* Ensure the image is clipped if it overflows the div */
+  }
+  
+  .tm-portfolio-image img {
+        /* max-width: 100%;*/
+        max-height: 100%;
+        object-fit: contain; /* This property will make the image fit inside the img tag */
+    }
 
   .tm-portfolio-name,
   .tm-portfolio-description {
@@ -324,6 +391,7 @@ p {
   .tm-portfolio-description {
     padding: 20px 30px;
   }
+  
 }
 
 @media (max-width: 572px) {
@@ -340,4 +408,177 @@ p {
   .tm-brand-container {
     padding: 25px;
   }
+}
+
+
+/*
+  Pop up box section
+*/
+.box {
+  width: 20%;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.2);
+  padding: 35px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+}
+
+.button {
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+  border: 2px solid blue;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+  background: blue;
+}
+
+
+
+
+project_table {
+        width: 100%;
+        /*border-collapse: collapse;*/
+    }
+
+    .project_table th, .project_table td {
+        /*border: 1px solid black;*/
+		padding-top: 20px;
+		padding-bottom: 20px;
+        padding-left: 8px;
+		padding-right: 8px;
+        text-align: left;
+		
+    }
+	
+	.project_table td {
+        height: 250px; /* Set the desired fixed height for the cells */
+    }
+
+    /* Set the width for the first column */
+    .project_table th:first-child, td:first-child {
+        width: 35%; /* Adjust this value to set the width of the first column */
+    }
+	
+	.project_table img {
+		border-radius: 10px; /* Adjust the value to control the roundness */
+        width: 100%;
+        height: auto;
+        max-width: 100%; /* Added to prevent larger images from stretching */
+        max-height: 100%; /* Added to prevent larger images from stretching */
+        object-fit: contain;
+    }
+	
+my_contact_table {
+        width: 100%;
+        border-collapse: collapse;
+		text-align: center;
+    }
+
+    .my_contact_table th, .my_contact_table td {
+        border: 1px solid black;
+		padding-top: 20px;
+		padding-bottom: 20px;
+        padding-left: 8px;
+		padding-right: 8px;
+		width: 35%;
+    }
+	
+	.my_contact_table td {
+        height: 100px; /* Set the desired fixed height for the cells */
+    }
+	
+	.my_contact_table img {
+		border-radius: 10px; /* Adjust the value to control the roundness */
+    }
+	
+
+popup_table {
+	width: 100%;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+.popup_table th, .popup_table td {
+	border: 1px solid black;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 8px;
+	padding-right: 8px;
+	width: 35%;
+	font-size: 16px;
+}
+
+.popup_table td {
+	height: 250px; /* Set the desired fixed height for the cells */
+}
+
+/* Set the width for the first column */
+.popup_table th:first-child, td:first-child {
+	width: 35%; /* Adjust this value to set the width of the first column */
+}
+
+.popup_table img {
+	border-radius: 10px; /* Adjust the value to control the roundness */
+	width: 100%;
+	height: auto;
+	max-width: 100%; /* Added to prevent larger images from stretching */
+	max-height: 100%; /* Added to prevent larger images from stretching */
+	object-fit: contain;
+	padding-bottom: 20px;
+	
+}	
+	
+.overlay {
+  position: Fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 9999; /* Set a high z-index value to ensure the overlay is on top */
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  /*width: 70%;*/
+  position: relative;
+  transition: all 5s ease-in-out;
+  max-width: 85%; /* Set a maximum width to ensure responsiveness */
+  max-height: 80vh; /* Set a maximum height of 80% of the viewport height */
+  overflow-y: auto; /* Add vertical scrollbars when content exceeds the height */
+}
+
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: orange;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
 }
