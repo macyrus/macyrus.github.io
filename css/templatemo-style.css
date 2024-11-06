@@ -162,19 +162,18 @@ a:hover {
   width: 330px;
   height: 220px;
   font-size: 2rem;
-  padding: 70px 95px;
+  /*padding: 70px 95px;*/
   display: flex;
   align-items: center;
   text-align: center;
+  border-radius: 10px;
+  justify-content: center; /* Center the content horizontally */
 }
 
 .tm-portfolio-name img {
 		border-radius: 10px; /* Adjust the value to control the roundness */
         width: 100%;
         height: auto;
-        max-width: 100%; /* Added to prevent larger images from stretching */
-        max-height: 100%; /* Added to prevent larger images from stretching */
-        object-fit: contain;
     }
 
 .tm-portfolio-description {
@@ -378,6 +377,7 @@ p {
 
   .tm-portfolio-name {
     justify-content: center;
+	padding: 70px 95px;
   }
   
   .tm-portfolio-image {
