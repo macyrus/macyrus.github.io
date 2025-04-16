@@ -63,6 +63,10 @@ a:hover {
   background-color: #3398cc;
 }
 
+.tm-bg-purple {
+  background-color: #dd6ef6;
+}
+
 .tm-bg-dark-gray {
   background-color: #676767;
 }
@@ -195,6 +199,10 @@ a:hover {
 
 .tm-text-blue {
   color: #3398cc;
+}
+
+.tm-text-purple {
+  color: #dd6ef6;
 }
 
 .tm-text-dark-gray {
