@@ -418,6 +418,13 @@
           setBrandMarginTop();
         });
       });
+	  
+	  window.addEventListener('hashchange', () => {
+		if (window.location.hash.startsWith('#popup')) {
+		  const popup = document.querySelector(window.location.hash + ' .popup');
+		  if (popup) popup.scrollTop = 0;
+		}
+	  });
     </script>
   </body>
 </html>
